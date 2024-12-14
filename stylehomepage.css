@@ -1,0 +1,207 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+  background-image: url('https://www.example.com/background.jpg'); /* Optional background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: fadeInBody 2s ease-in-out; /* Body fade-in animation */
+}
+
+/* Keyframes for fading in the body */
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Centering the main title */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #a40000;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  animation: slideIn 1s ease-out; /* Animation for title */
+}
+
+/* Keyframes for sliding the title in */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+h1:hover {
+  transform: scale(1.1); /* Scales up the title on hover */
+}
+
+/* Style for subheading */
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+  animation: fadeIn 1.5s ease-out; /* Animation for subheading */
+}
+
+h2:hover {
+  color: #ff5733; /* Changes color on hover */
+}
+
+/* Paragraph styles */
+p {
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  animation: fadeInText 2s ease-out; /* Animation for paragraph text */
+}
+
+/* Keyframes for fading in the paragraph text */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p:hover {
+  opacity: 1; /* Increases opacity when hovering over paragraphs */
+}
+
+/* Styling for the list container */
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  animation: slideInUp 1.5s ease-out; /* Animation for list items */
+}
+
+/* Keyframes for sliding up the list */
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Style for list items */
+ul li {
+  font-size: 20px;
+  margin: 5px 0;
+  position: relative;
+  transition: color 0.3s ease;
+  animation: fadeInUp 2s ease-out; /* Fade-in effect for list items */
+}
+
+/* Keyframes for fading in the list items */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul li:hover {
+  color: #0056b3; /* Changes color when hovering over list items */
+}
+
+/* Adding a cool icon effect on list items */
+ul li::before {
+  content: '🔹'; /* Adds an icon before the text */
+  position: absolute;
+  left: -25px;
+  top: 0;
+  font-size: 18px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+ul li:hover::before {
+  opacity: 1; /* Increases opacity of the icon when hovering */
+}
+
+/* Links inside lists */
+a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff5733; /* Changes link color on hover */
+  text-decoration: underline;
+}
+
+/* Nested list styling */
+ul ul {
+  font-size: 18px;
+  margin-top: 5px;
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+/* Styling for list container */
+div {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  animation: fadeInBox 2s ease-out; /* Animation for the div content */
+}
+
+/* Keyframes for fading in the div content */
+@keyframes fadeInBox {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+div:hover {
+  transform: scale(1.02); /* Slightly enlarges the div when hovered */
+}
+
+/* Adding hover effect to all links */
+a:focus, a:hover {
+  color: #ff5733;
+  outline: none;
+}
